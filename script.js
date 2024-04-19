@@ -68,24 +68,24 @@ async function checkWeather(city) {
     
     if(weather_data.weather[0].main == "Clouds")
     {
-        weather_img.src = "icons/clouds.png";
+        weather_img.src = "clouds.png";
     }
     else if(weather_data.weather[0].main == "Clear")
     {
-        weather_img.src = "icons/clear.png";
+        weather_img.src = "clear.png";
     }
     
     if(weather_data.weather[0].main == "Rain")
     {
-        weather_img.src ="icons/rain.png";
+        weather_img.src ="rain.png";
     }
     else if(weather_data.weather[0].main == "Drizzle")
     {
-        weather_img.src ="icons/drizzle.png";
+        weather_img.src ="drizzle.png";
     }
     else if(weather_data.weather[0].main == "Mist")
     {
-        weather_img.src ="icons/mist.png";
+        weather_img.src ="mist.png";
     }
     getCityCoordinates();
 }
