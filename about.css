@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #001428;
+}
+.main {
+    background-image: url(https://img.freepik.com/free-vector/sky-with-anime-fluffy-curve-shaped-clouds-cartoon-vector-illustration-sunny-summer-day-cloudy-heaven-background-with-blue-pink-gradient-color-panoramic-air-landscape-clear-weather_107791-24304.jpg);
+    background-size: max(1200px, 135vw);
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 800px;
+    position: relative;
+}
+
+.main .box {
+    height: 800px;
+    width: 100%;
+    opacity: 0.77;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+.about {
+    font-family: 'Martel Sans', sans-serif;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.about-top {
+    width: 100%;
+}
+.nav-top
+{
+    position: relative;
+    padding: 24px 78px 34px 66px;
+    box-shadow: 0 0 70px rgba(8, 0, 125, 74.7);
+    background: linear-gradient(to right, #001f3f, #000000);
+    color: #fff;
+    display: grid;
+    gap: 19px;
+    /* border-top-right-radius: 27px; */
+    /* border-bottom-right-radius: 27px; */
+    /* border-top-left-radius: 27px; */
+    /* border-bottom-left-radius: 27px; */
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 16px 2px 2px 2px;
+}
+
+.about-mid {
+    display: flex;
+    gap: 153px;
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    z-index: 1;
+    position: relative;
+    margin: 55px 7px 7px 50px;
+}
+.mid-left h2 {
+    font-weight: 600;
+}
+
+.intro-text {
+    font-family: sans-serif;
+    display: grid;
+    gap: 14px;
+    font-size: 18px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(1, 0, 59, 0.5);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 40, 150);
+    border-radius: 10px;
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+      <link rel="shortcut icon" href="icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <img src="icons/logo.png">
+            <p>Weather360</p>
+            <div class="btm-nav">
+                    <button  type="button" value="Register" onclick="location.href='register.html'"  class="btn">Register</button>
+                    <button type="button" value="Sign In" onclick="location.href='login.html'" class="btn_sm">Sign In</button>
+            </div>
+            <div class="tooltip-container">
+                <span class="tooltip">10k</span>
+                <span class="text">
+                    <i class="fa-solid fa-user"></i>
+                  Follow</span>
+            </div>
+            <div class="tooltip-container-dark">
+                <span class="text-dark">
+                    <i class="fa-solid fa-user"></i>
+                  Followed</span>
+            </div>
+        </nav>
+        <div class="box"></div>
+        <div class="hero">
+            <span>Don't let the weather catch you off guard!</span>
+            <span>Trust our forecasts to keep you prepared and stylish</span>
+            <div class="hero-buttons">
+                <input class="input-box" type="text" placeholder="Search City">
+                <div class="search-icon">
+                    <button>
+                        <img id="searchBtn" src="https://thumbs.dreamstime.com/b/search-icon-blue-background-your-text-vector-illustration-search-icon-blue-background-122826172.jpg">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="first">
+           <div class="current-weather-card">
+                <div class="container-left">
+                    <h5>Now</h5>
+                    <div class="icon">
+                        <h1 class="temp">22<h6><h6>o</h4><sup>c</sup></h4></h1>
+                        <img class="weather-img" src="icons/09d.png">
+                    </div>
+                    <div class="location">
+                        <h4 class="description">Light Rain</h4>
+                        <div class="inner-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h5 id="city">New York</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="current-humidity">    
+                <div class="container-right">
+                    <div class="sub-grp1">
+                        <div><h5>Humidity</h5></div>
+                        <div class="icon1">
+                            <i class="fa-brands fa-drupal"></i>
+                            <span id="humidity">60%</span>
+                        </div>
+                    </div>     
+                    <div class="sub-grp2">
+                        <div><h5>Pressure</h5></div>
+                        <div class="icon2">
+                            <img src="icons/wind1.png" width="40px" height="40px">    
+                            <span id="pressure">1011 hPa</span>
+                        </div>
+                    </div>     
+                    <div class="sub-grp3">
+                        <h5>Visibility</h5>
+                        <div class="icon3">
+                            <i class="fa-regular fa-eye"></i>
+                            <span id="visibility">0.4 km</span>
+                        </div>
+                    </div>      
+                </div>
+            </div>   
+        </div>
+        <div class="second">
+            <div class="forecast-card">
+                <div class="day-card">
+                    <div class="day-date">
+                        <p class="Date1">__</p>
+                        <p class="Day1">____</p>
+                    </div>
+                    <div class="temp-icon">
+                        <h1 class="temp">___<sup>c</sup></h1>
+                        <img class="weather-img" src="icons/09d.png">
+                    </div>
+                </div>
+                <div class="day-card">
+                    <div class="day-date">
+                        <p class="Date2">___</p>
+                        <p class="Day2">___</p>
+                    </div>
+                    <div class="temp-icon">
+                        <h1 class="temp2">___<sup>c</sup></h1>
+                        <img class="weather-img2" src="icons/09d.png">
+                    </div>
+                </div>
+                <div class="day-card">
+                    <div class="day-date">
+                        <p class="Date3">___</p>
+                        <p class="Day3">___</p>
+                    </div>
+                    <div class="temp-icon">
+                        <h1 class="temp3">___<sup>c</sup></h1>
+                        <img class="weather-img3" src="icons/09d.png">
+                    </div>
+                </div>
+                <div class="day-card">
+                    <div class="day-date">
+                        <p class="Date4">___</p>
+                        <p class="Day4">___</p>
+                    </div>
+                    <div class="temp-icon">
+                        <h1 class="temp4">__<sup>c</sup></h1>
+                        <img class="weather-img4" src="icons/09d.png">
+                    </div>
+                </div>
+                <div class="day-card">
+                    <div class="day-date">
+                        <p class="Date5">__</p>
+                        <p class="Day5">__</p>
+                    </div>
+                    <div class="temp-icon">
+                        <h1 class="temp5">__<sup>c</sup></h1>
+                        <img class="weather-img5" src="icons/09d.png">
+                    </div>
+                </div>
+                <div class="day-card">
+                    <div class="day-date">
+                        <p class="Date4">___</p>
+                        <p class="Day4">___</p>
+                    </div>
+                    <div class="temp-icon">
+                        <h1 class="temp4">__<sup>c</sup></h1>
+                        <img class="weather-img4" src="icons/09d.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third">
+            <div class="content">
+                <div class="top">
+                    <div class="top-text">
+                        <span>Sunny skies ahead, enjoy!</span>
+                        <p>Sunshine or showers, stay tuned for your daily weather updates 
+                            with Weather360 <span style="color: red; font-size: 30px;">&#9829;</span></p>
+                    </div>
+                    <div class="top-image">
+                        <img src="icons/tv.png">
+                        <video src="WhatsApp Video 2024-02-06 at 18.47.17_de9d503f.mp4" controls></video>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <div class="footer-card">
+                <div class="footer-card-top">
+                    <div class="top-left">
+                        <div>
+                            <h2>Contact</h2>
+                            <h2>Us</h2>
+                        </div>
+                        <h5>PCCOE College</h5>
+                        <h5>near Akurdi Railway Station, Nigdi</h5>
+                        <h5>Pune-411044</h5>
+                    </div>
+                    <div class="top-right">
+                        <div class="share">
+                            <h2>Share</h2>
+                            <h2>Feedback</h2>
+                        </div>
+                        <div class="icons">
+                            <li>
+                                <a onclick="location.href='https://www.facebook.com/people/Weather-Forecast/pfbid06BqjpcVQkMHHdzQedbxJV3xxZZGmmQpR9RZTYofjcg3jhTb2NYPNayhqe2sQjSkRl/?mibextid=ZbWKwL'" id="facebook">
+                                    <i class="fa fa-brands fa-facebook" ></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a onclick="location.href='https://www.instagram.com/weather360_/?igsh=dzR1dWhrNG4xNWJx'">
+                                    <i class="fa fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a onclick="location.href='https://www.youtube.com/@Weather360'">
+                                    <i class="fa fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a onclick="location.href='https://x.com/Weather360_?t=9DfcZ7--nIOGebX8_5Y-Yg&s=08'">
+                                    <i class="fa fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-card-bottm">
+                    <div class="top-left2">
+                        <div class="btm-top">
+                            <a href='terms.html'>Terms of Use | </a>
+                            <a href='policy.html'>Privacy Policy | </a>
+                            <a href='about.html'>About Us </a>
+                        </div>
+
+                        <div class="btm-icon">
+                            <img src="icons/logo.png">
+                            <h3>Weather360</h3>
+                        </div>
+                    </div>
+                    <div class="top-right2">
+                        <div class="container">
+                            <div class="post">
+                                <div class="text">Thanks for rating us!</div>
+                                <div class="edit">EDIT</div>
+                            </div>
+                            <div class="star-widget">
+                              <input type="radio" name="rate" id="rate-5">
+                              <label for="rate-5" class="fas fa-star"></label>
+                              <input type="radio" name="rate" id="rate-4">
+                              <label for="rate-4" class="fas fa-star"></label>
+                              <input type="radio" name="rate" id="rate-3">
+                              <label for="rate-3" class="fas fa-star"></label>
+                              <input type="radio" name="rate" id="rate-2">
+                              <label for="rate-2" class="fas fa-star"></label>
+                              <input type="radio" name="rate" id="rate-1">
+                              <label for="rate-1" class="fas fa-star"></label>
+                              <form>
+                                <header></header>
+                                <div class="textarea">
+                                  <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                                </div>
+                                <div class="btn">
+                                  <button class="btnpost" type="submit">Post</button>
+                                </div>
+                              </form> 
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        <script src="elements.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>

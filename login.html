@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/login.css">
+    <script>
+        function login()
+        {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            if(email== "nvasi056@gmail.com" && password=="nvkiller056")
+            {
+                window.location.assign("index.html")
+                alert("Tum sahi, mein galat!")
+            } else {
+                alert("Data ka dard, bro!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="login-wrapper">
+            <form class="form" >
+                <h2>Sign In</h2>
+                <div class="input-group">
+                    <input type="text" name="loginUser" id="email" placeholder="Enter Email Address" required />
+                </div>
+                <div class="input-group">
+                    <input type="password" name="loginPassword" id="password" placeholder="Enter Password" required />
+                </div> 
+                <div class="sign-in">
+                    <input type="button" value="Sign In" class="submit-btn" onclick="login();"/>    
+                </div>   
+                <div class="register">
+                        <input type="button" value="Register" class="submit-btn" onclick="location.href='register.html'"/>
+                    <label for="Register">To Create new Account</label>
+                </div>    
+            </form>
+        </div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
