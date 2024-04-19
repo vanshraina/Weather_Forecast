@@ -17,7 +17,7 @@ const createWeatherCard = (weatherItem) => {
                 </div>
                 <div class="temp-icon">
                     <h1 class="temp2">${(weatherItem.main.temp-273.15).toFixed(2)}<sup>oC</sup></h1>
-                    <img class="weather-img2" src="icons/${weatherItem.weather[0].icon}.png">
+                    <img class="weather-img2" src="${weatherItem.weather[0].icon}.png">
                 </div>
             </div>`;
         
